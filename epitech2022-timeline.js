@@ -27,53 +27,74 @@ function drawChart() {
   var now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   dataTable.addRows([
     ['\0', 'Now', now, now],
-    ['Innov. - Moonshot', 'TOGETHER', start(2, 9, 2019), end(3, 9, 2019)],
-    ['Innov. - Moonshot', 'CLIMATE', start(3, 9, 2019), end(4, 9, 2019)],
-    ['Innov. - Moonshot', 'LIFE', start(4, 9, 2019), end(5, 9, 2019)],
-    ['Innov. - Moonshot', 'WORK', start(5, 9, 2019), end(6, 9, 2019)],
-    ['Innov. - Moonshot', 'Hack\'InTrack', start(7, 9, 2019), end(8, 9, 2019)],
-    ['Innov. - Moonshot', 'Moonshot Solution', start(9, 9, 2019), end(12, 9, 2019)],
-    ['Security - Cryptography', 'Call for Papers', start(2, 9, 2019), end(29, 9, 2019)],
-    ['Security - Cryptography', 'CAESAR', start(16, 9, 2019), end(29, 9, 2019)],
-    ['Security - Cryptography', 'BTTF', start(4, 11, 2019), end(10, 11, 2019)],
-    ['Security - Cryptography', 'BTTF2', start(16, 12, 2019), end(29, 12, 2019)],
-    ['FR - Écrits Professionnels', 'Avocat du diable', start(16, 9, 2019), end(6, 10, 2019)],
-    ['FR - Écrits Professionnels', '3 emails', start(7, 10, 2019), end(27, 10, 2019)],
-    ['FR - Écrits Professionnels', 'Mémo professionnel', start(28, 10, 2019), end(17, 11, 2019)],
-    ['FR - Écrits Professionnels', 'Informer: Le magazine du geek', start(11, 11, 2019), end(12, 1, 2020)],
-    ['Mathematics ', '301dannon', start(16, 9, 2019), end(29, 9, 2019)],
-    ['Mathematics ', '302separation', start(30, 9, 2019), end(13, 10, 2019)],
-    ['Mathematics ', '303make', start(14, 10, 2019), end(27, 10, 2019)],
-    ['Mathematics ', '304pacman', start(28, 10, 2019), end(10, 11, 2019)],
-    ['Mathematics ', '305construction', start(11, 11, 2019), end(24, 11, 2019)],
-    ['Mathematics ', '306radiator', start(25, 11, 2019), end(22, 12, 2019)],
-    ['Mathematics ', '307multigrains', start(23, 12, 2019), end(12, 1, 2020)],
-    ['Mathematics ', '308reedpipes', start(13, 1, 2020), end(26, 1, 2020)],
-    ['Mathematics ', '309pollution', start(27, 1, 2020), end(9, 2, 2020)],
-    ['Advanced C++ - Babel', 'Babel', start(16, 09, 2019), end(6, 10, 2019)],
-    ['Advanced C++ - Babel', 'BTTF', start(4, 11, 2019), end(10, 11, 2019)],
-    ['Advanced C++ - Babel', 'BTTF2', start(16, 12, 2019), end(29, 12, 2019)],
-    ['Appdev - Epicture', 'Epicture', start(30, 9, 2019), end(20, 10, 2019)],
-    ['Appdev - Epicture', 'BTTF', start(4, 11, 2019), end(10, 11, 2019)],
-    ['Appdev - Epicture', 'BTTF2', start(16, 12, 2019), end(29, 12, 2019)],
-    ['Artificial Intelligence', 'Gomoku', start(7, 10, 2019), end(27, 10, 2019)],
-    ['Artificial Intelligence', 'BTTF', start(4, 11, 2019), end(10, 11, 2019)],
-    ['Artificial Intelligence', 'BTTF2', start(16, 12, 2019), end(29, 12, 2019)],
-    ['Functional Prog - evalExpr', 'evalExpr', start(21, 10, 2019), end(3, 11, 2019)],
-    ['Functional Prog - evalExpr', 'BTTF', start(4, 11, 2019), end(10, 11, 2019)],
-    ['Functional Prog - evalExpr', 'BTTF2', start(16, 12, 2019), end(29, 12, 2019)],
-    ['DevOps', 'Docker Containerization', start(21, 10, 2019), end(3, 11, 2019)],
-    ['DevOps', 'Automation', start(4, 11, 2019), end(17, 11, 2019)],
-    ['DevOps', 'Orchestrator', start(18, 11, 2019), end(15, 12, 2019)],
-    ['Appdev - Dashboard', 'Dashboard', start(28, 10, 2019), end(17, 11, 2019)],
-    ['Appdev - Dashboard', 'BTTF', start(16, 12, 2019), end(29, 12, 2019)],
-    ['Advanced C++ - R-Type', 'R-Type', start(4, 11, 2019), end(1, 12, 2019)],
-    ['Advanced C++ - R-Type', 'BTTF', start(16, 12, 2019), end(29, 12, 2019)],
-    ['Functional Prog - dumbXML', 'dumbXML', start(18, 11, 2019), end(5, 1, 2020)],
-    ['Functional Prog - dumbXML', 'BTTF', start(13, 1, 2020), end(19, 1, 2020)],
-    ['Advanced C++ - Zia', 'Zia', start(6, 1, 2020), end(1, 3, 2020)],
-    ['Appdev - AREA', 'AREA', start(6, 1, 2020), end(1, 3, 2020)],
-    ['Functional Prog - KOAK ', 'KOAK ', start(6, 1, 2020), end(1, 3, 2020)],
+    [ 'B5 - FR - Écrits Professionnels', 'Avocat du diable', start(16, 09, 2019), start(06, 10, 2019) ],
+    [ 'B5 - FR - Écrits Professionnels', '3 emails', start(07, 10, 2019), start(27, 10, 2019) ],
+    [ 'B5 - FR - Écrits Professionnels', 'Mémo professionel', start(28, 10, 2019), start(17, 11, 2019) ],
+    [ 'B5 - FR - Écrits Professionnels', 'Informer: Le magasine du geek', start(11, 11, 2019), start(12, 01, 2020) ],
+
+    [ 'B5 - Advanced C++ - Babel', 'Babel', start(16, 09, 2019), start(06, 10, 2019) ],
+    [ 'B5 - Advanced C++ - Babel', 'BTTF - Babel', start(04, 11, 2019), start(10, 11, 2019) ],
+    [ 'B5 - Advanced C++ - Babel', 'BTTF 2 - Babel', start(16, 12, 2019), start(29, 12, 2019) ],
+
+    [ 'B5 - Advanced C++ - R-Type', 'R-Type', start(04, 11, 2019), start(01, 12, 2019) ],
+    [ 'B5 - Advanced C++ - R-Type', 'BTTF - R-Type', start(16, 12, 2019), start(29, 12, 2019) ],
+
+    [ 'B5 - Advanced C++ - Zia', 'Zia', start(06, 01, 2020), start(01, 03, 2020) ],
+
+    [ 'B5 - AppDev - AREA', 'AREA', start(06, 01, 2020), start(01, 03, 2020) ],
+
+    [ 'B5 - AppDev - Dashboard', 'Dashboard', start(28, 10, 2019), start(17, 11, 2019) ],
+    [ 'B5 - AppDev - Dashboard', 'BTTF - Dashboard', start(16, 12, 2019), start(29, 12, 2019) ],
+
+    [ 'B5 - AppDev - Epicture', 'Epicture', start(30, 09, 2019), start(20, 10, 2019) ],
+    [ 'B5 - AppDev - Epicture', 'BTTF - Epicture', start(04, 11, 2019), start(10, 11, 2019) ],
+    [ 'B5 - AppDev - Epicture', 'BTTF 2 - Epicture', start(16, 12, 2019), start(29, 12, 2019) ],
+
+    [ 'B5 - Artificial Intelligence', 'Gomoku', start(07, 10, 2019), start(27, 10, 2019) ],
+    [ 'B5 - Artificial Intelligence', 'BTTF - Gomoku', start(04, 11, 2019), start(10, 11, 2019) ],
+    [ 'B5 - Artificial Intelligence', 'BTTF 2 - Gomoku', start(16, 12, 2019), start(29, 12, 2019) ],
+
+    [ 'B5 - DevOps', 'Docker Containerization', start(21, 10, 2019), start(03, 11, 2019) ],
+    [ 'B5 - DevOps', 'Automation', start(04, 11, 2019), start(17, 11, 2019) ],
+    [ 'B5 - DevOps', 'Orchestrator', start(18, 11, 2019), start(15, 12, 2019) ],
+
+    [ 'B5 - Functional Prog - dumbXML', 'dumbXML', start(18, 11, 2019), start(05, 01, 2020) ],
+    [ 'B5 - Functional Prog - dumbXML', 'BTTF - dumbXML', start(13, 01, 2020), start(19, 01, 2020) ],
+
+    [ 'B5 - Functional Prog - evalExpr', 'functional evalExpr', start(21, 10, 2019), start(03, 11, 2019) ],
+    [ 'B5 - Functional Prog - evalExpr', 'BTTF - functional evalExpr', start(04, 11, 2019), start(10, 11, 2019) ],
+    [ 'B5 - Functional Prog - evalExpr', 'BTTF 2 - functional evalExpr', start(16, 12, 2019), start(29, 12, 2019) ],
+
+    [ 'B5 - Functional Prog - KOAK', 'KOAK', start(06, 01, 2020), start(01, 03, 2020) ],
+
+    [ 'B5 - JAM', 'JAM1', start(08, 02, 2020), start(09, 02, 2020) ],
+    [ 'B5 - JAM', 'JAM2', start(21, 03, 2020), start(22, 03, 2020) ],
+
+    [ 'B5 - Innov. - Moonshot', '#TOGETHER', start(02, 09, 2019), start(03, 09, 2019) ],
+    [ 'B5 - Innov. - Moonshot', '#CLIMATE', start(03, 09, 2019), start(04, 09, 2019) ],
+    [ 'B5 - Innov. - Moonshot', '#LIFE', start(04, 09, 2019), start(05, 09, 2019) ],
+    [ 'B5 - Innov. - Moonshot', '#WORK', start(05, 09, 2019), start(06, 09, 2019) ],
+    [ 'B5 - Innov. - Moonshot', 'Hack\'InTrack', start(07, 09, 2019), start(08, 09, 2019) ],
+    [ 'B5 - Innov. - Moonshot', 'Moonshot Solution', start(09, 09, 2019), start(12, 09, 2019) ],
+
+    [ 'B5 - Innov. - Forward', 'Forward', start(02, 12, 2019), start(15, 12, 2019) ],
+  
+    [ 'B5 - Mathematics', '301dannon', start(16, 09, 2019), start(29, 09, 2019) ],
+    [ 'B5 - Mathematics', '302separation', start(30, 09, 2019), start(13, 10, 2019) ],
+    [ 'B5 - Mathematics', '303make', start(14, 10, 2019), start(27, 10, 2019) ],
+    [ 'B5 - Mathematics', '304pacman', start(28, 10, 2019), start(10, 11, 2019) ],
+    [ 'B5 - Mathematics', '305construction', start(11, 11, 2019), start(24, 11, 2019) ],
+    [ 'B5 - Mathematics', '306radiator', start(25, 11, 2019), start(22, 12, 2019) ],
+    [ 'B5 - Mathematics', '307multigrains', start(23, 12, 2019), start(12, 01, 2020) ],
+    [ 'B5 - Mathematics', '308reedpipes', start(13, 01, 2020), start(26, 01, 2020) ],
+    [ 'B5 - Mathematics', '309pollution', start(27, 01, 2020), start(09, 02, 2020) ],
+
+    [ 'B5 - Part-Time Job', 'Part-time internship', start(16, 09, 2019), start(08, 03, 2020) ],
+
+    [ 'B5 - Security - Cryptography', 'Call For Papers', start(02, 09, 2019), start(29, 09, 2019) ],
+    [ 'B5 - Security - Cryptography', 'CAESAR', start(16, 09, 2019), start(29, 09, 2019) ],
+    [ 'B5 - Security - Cryptography', 'BTTF - CAESAR', start(04, 11, 2019), start(10, 11, 2019) ],
+    [ 'B5 - Security - Cryptography', 'BTTF 2 - CAESAR', start(16, 12, 2019), start(29, 12, 2019) ]
   ]);
 
   chart.draw(dataTable, {
